@@ -34,15 +34,38 @@ void strCat(char* dest, unsigned int size, char* src)
     }
 }
 
+// 문자열 복사
+void strCpy(char* dest, unsigned int size, char* src)
+{
+    if (size <= 1)
+        return;
+
+    for (int i = 0; i <= size - 1; i++)
+    {
+        dest[i] = src[i];
+
+        if (src[i] == '\0') return;
+    }
+
+    dest[size - 1] = '\0';
+    return;
+}
+
 int main()
 {
     char testText[19] = "test Text Code...";
     char testPatt[] = "Text";
     //cout << strLen(testText) << endl;
 
-    strCat(testText, 19, testPatt);
+    //strCat(testText, 19, testPatt);
+    //cout << testText << endl;
 
-    cout << testText << endl;
+    char emptyText[5];
+    char copyText[] = "Test";
+
+    strCpy(emptyText, 5, copyText);
+    cout << emptyText << endl;
+
 
     return 0;
 }
