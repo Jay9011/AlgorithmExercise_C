@@ -51,21 +51,46 @@ void strCpy(char* dest, unsigned int size, char* src)
     return;
 }
 
+// 문자열 비교
+int strCmp(char* str1, char* str2)
+{
+    int str1Size = strLen(str1);
+    int str2Size = strLen(str2);
+
+    int minSize = str1Size <= str2Size ? str1Size : str2Size;
+
+    for (int i = 0; i < minSize; i++)
+    {
+        if (str1[i] < str2[i]) return -1;
+        else if (str1[i] > str2[i]) return 1;
+    }
+
+    if (str1Size < str2Size) return -1;
+    else if (str1Size > str2Size) return 1;
+
+    return 0;
+}
+
 int main()
 {
-    char testText[19] = "test Text Code...";
-    char testPatt[] = "Text";
+    //char testText[19] = "test Text Code...";
+    //char testPatt[] = "Text";
     //cout << strLen(testText) << endl;
 
     //strCat(testText, 19, testPatt);
     //cout << testText << endl;
 
-    char emptyText[5];
+    /*char emptyText[5];
     char copyText[] = "Test";
 
     strCpy(emptyText, 5, copyText);
-    cout << emptyText << endl;
+    cout << emptyText << endl;*/
 
+
+    char text1[] = "tee";
+    char text2[] = "test";
+
+    cout << strCmp(text1, text2) << endl;
 
     return 0;
 }
