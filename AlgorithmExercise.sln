@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KMPAlgorithm", "KMPAlgorith
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fibonachi", "Fibonachi\Fibonachi.vcxproj", "{53ABA58A-B369-46A1-9C4F-A1867C3DCD5C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Eratos", "Eratos\Eratos.vcxproj", "{536A50DE-9149-4061-BEFA-975865D02E85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{53ABA58A-B369-46A1-9C4F-A1867C3DCD5C}.Release|x64.Build.0 = Release|x64
 		{53ABA58A-B369-46A1-9C4F-A1867C3DCD5C}.Release|x86.ActiveCfg = Release|Win32
 		{53ABA58A-B369-46A1-9C4F-A1867C3DCD5C}.Release|x86.Build.0 = Release|Win32
+		{536A50DE-9149-4061-BEFA-975865D02E85}.Debug|x64.ActiveCfg = Debug|x64
+		{536A50DE-9149-4061-BEFA-975865D02E85}.Debug|x64.Build.0 = Debug|x64
+		{536A50DE-9149-4061-BEFA-975865D02E85}.Debug|x86.ActiveCfg = Debug|Win32
+		{536A50DE-9149-4061-BEFA-975865D02E85}.Debug|x86.Build.0 = Debug|Win32
+		{536A50DE-9149-4061-BEFA-975865D02E85}.Release|x64.ActiveCfg = Release|x64
+		{536A50DE-9149-4061-BEFA-975865D02E85}.Release|x64.Build.0 = Release|x64
+		{536A50DE-9149-4061-BEFA-975865D02E85}.Release|x86.ActiveCfg = Release|Win32
+		{536A50DE-9149-4061-BEFA-975865D02E85}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
