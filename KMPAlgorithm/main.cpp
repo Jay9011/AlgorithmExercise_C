@@ -45,6 +45,8 @@ int KMP(char* text, char* pattern)
         }
     }
 
+    free(shiftArr);
+
     return -1;
 }
 
@@ -71,6 +73,8 @@ int KMPFindCount(char* text, char* pattern)
             j = shiftArr[j];
         }
     }
+
+    free(shiftArr);
 
     return count;
 }
