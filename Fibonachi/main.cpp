@@ -11,6 +11,7 @@ int Fibonachi(int n)
     else if (n == 1) return second;
 
     int temp = 0;
+
     for (int i = 2; i <= n; i++)
     {
         temp = first + second;
