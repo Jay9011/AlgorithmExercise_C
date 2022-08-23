@@ -7,8 +7,8 @@
 
 using namespace std;
 
-vector<pair<int, int>> edges[NUM + 1];
-int cost[NUM + 1];
+vector<pair<int, int>> edges[NUM + 1];  // 노드의 정보 (정점, 가중치)
+int cost[NUM + 1]; // 출발점에서의 각 노드로까지의 최소 비용
 
 void Dijkstra(int start)
 {
@@ -19,14 +19,14 @@ void Dijkstra(int start)
     while (!pq.empty())
     {
         int current = pq.top().first;
-        int distance = -pq.top().second;
+        int currentDistance = -pq.top().second;
         pq.pop();
 
-        if (cost[current] < distance) continue;
+        if (cost[current] < currentDistance) continue;
         for (int i = 0; i < edges[current].size(); i++)
         {
             int next = edges[current][i].first;
-            int nextDistance = distance + edges[current][i].second;
+            int nextDistance = currentDistance + edges[current][i].second;
 
             if (nextDistance < cost[next])
             {
@@ -34,7 +34,9 @@ void Dijkstra(int start)
                 pq.push(make_pair(next, -nextDistance));
             }
         }
+        
     }
+    
 }
 
 int main()
@@ -74,7 +76,7 @@ int main()
 
     for (int i = 1; i < NUM + 1; i++)
     {
-        cout << cost[i] << " ";
+        cout << cost[i] << " "; // 0 2 3 1 2 4
     }
 
     return 0;
