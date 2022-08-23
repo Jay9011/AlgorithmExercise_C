@@ -7,7 +7,7 @@ void InsertionSort(int* arr, int size)
     for (int i = 1; i < size; i++)
     {
         int j = i;
-        while ( 0 < j && arr[j - 1] > arr[j])
+        while (0 < j && arr[j - 1] > arr[j])
         {
             swap(arr[j - 1], arr[j]);
             j--;
@@ -38,7 +38,7 @@ void QuickSortUtil(int* arr, int lower, int upper)
             swap(arr[lower], arr[upper]);
         }
     }
-    
+
     swap(arr[upper], arr[start]);
 
     QuickSortUtil(arr, start, upper - 1);
@@ -53,7 +53,6 @@ void QuickSort(int* arr, int size)
 void SelectionSort(int* arr, int size)
 {
     int min;
-
     for (int i = 0; i < size - 1; i++)
     {
         min = i;
