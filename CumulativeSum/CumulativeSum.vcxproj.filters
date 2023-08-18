@@ -24,5 +24,8 @@
     <ClCompile Include="RestSum_10986.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SectionSum_11660.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
