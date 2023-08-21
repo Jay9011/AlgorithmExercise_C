@@ -18,5 +18,8 @@
     <ClCompile Include="Coin_11047.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="MeetingRoom_1931.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
