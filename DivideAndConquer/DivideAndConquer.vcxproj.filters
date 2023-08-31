@@ -30,5 +30,8 @@
     <ClCompile Include="BinomialCoefficient3_11401.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="MatrixMul_2740_미완.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
