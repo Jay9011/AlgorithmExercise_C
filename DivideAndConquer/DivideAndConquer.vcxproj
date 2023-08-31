@@ -136,6 +136,7 @@
     <ClCompile Include="MatrixMul_2740_미완.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="MatrixSquare_10830.cpp" />
     <ClCompile Include="MulDivide_1629.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
