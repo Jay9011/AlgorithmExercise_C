@@ -9,7 +9,10 @@ void initMatrix(int n)
 {
 	for(int i = 0; i < n; i++)
 		for(int j = 0; j < n; j++)
+		{
 			cin >> A[i][j];
+			A[i][j] %= MOD;
+		}
 }
 
 vector<vector<int>> mulMatrix(const vector<vector<int>>& mat1, const vector<vector<int>>& mat2, int size)
@@ -22,7 +25,7 @@ vector<vector<int>> mulMatrix(const vector<vector<int>>& mat1, const vector<vect
 		{
 			for(int k = 0; k < size; k++)
 			{
-				result[i][j] += (mat1[i][k] * mat2[k][j]) % MOD;
+				result[i][j] += mat1[i][k] * mat2[k][j];
 			}
 			result[i][j] %= MOD;
 		}
@@ -31,14 +34,14 @@ vector<vector<int>> mulMatrix(const vector<vector<int>>& mat1, const vector<vect
 	return result;
 }
 
-vector<vector<int>> dividePow(int n, int size)
+vector<vector<int>> dividePow(long long b, int size)
 {
-	if (n == 1) return A;
+	if (b == 1) return A;
 
 	// 분할 정복
-	vector<vector<int>> halfMat = dividePow(n / 2, size);
+	vector<vector<int>> halfMat = dividePow(b / 2, size);
 
-	if(n & 1) // n이 홀수인 경우
+	if (b & 1) // b가 홀수인 경우
 	{
 		return mulMatrix(A, mulMatrix(halfMat, halfMat, size), size);
 	}
@@ -53,7 +56,8 @@ int main()
 	ios::sync_with_stdio(false);
 	cin.tie(NULL); cout.tie(NULL);
 
-	int N, B;
+	int N;
+	long long B;
 	cin >> N >> B;
 
 	A.resize(N, vector<int>(N));
