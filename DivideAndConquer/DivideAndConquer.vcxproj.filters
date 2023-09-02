@@ -39,5 +39,8 @@
     <ClCompile Include="Fibonacci6_11444.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BigRectOfHistogram_6549.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
