@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Greedy", "Greedy\Greedy.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DivideAndConquer", "DivideAndConquer\DivideAndConquer.vcxproj", "{A2F0AFAF-002F-4661-9259-FA2DB3CF3C7F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinarySearch", "BinarySearch\BinarySearch.vcxproj", "{CD820FA5-0019-4043-BA68-F29A1EA24CF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -209,6 +211,18 @@ Global
 		{A2F0AFAF-002F-4661-9259-FA2DB3CF3C7F}.Release|x64.Build.0 = Release|x64
 		{A2F0AFAF-002F-4661-9259-FA2DB3CF3C7F}.Release|x86.ActiveCfg = Release|Win32
 		{A2F0AFAF-002F-4661-9259-FA2DB3CF3C7F}.Release|x86.Build.0 = Release|Win32
+		{CD820FA5-0019-4043-BA68-F29A1EA24CF4}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{CD820FA5-0019-4043-BA68-F29A1EA24CF4}.Debug|Any CPU.Build.0 = Debug|x64
+		{CD820FA5-0019-4043-BA68-F29A1EA24CF4}.Debug|x64.ActiveCfg = Debug|x64
+		{CD820FA5-0019-4043-BA68-F29A1EA24CF4}.Debug|x64.Build.0 = Debug|x64
+		{CD820FA5-0019-4043-BA68-F29A1EA24CF4}.Debug|x86.ActiveCfg = Debug|Win32
+		{CD820FA5-0019-4043-BA68-F29A1EA24CF4}.Debug|x86.Build.0 = Debug|Win32
+		{CD820FA5-0019-4043-BA68-F29A1EA24CF4}.Release|Any CPU.ActiveCfg = Release|x64
+		{CD820FA5-0019-4043-BA68-F29A1EA24CF4}.Release|Any CPU.Build.0 = Release|x64
+		{CD820FA5-0019-4043-BA68-F29A1EA24CF4}.Release|x64.ActiveCfg = Release|x64
+		{CD820FA5-0019-4043-BA68-F29A1EA24CF4}.Release|x64.Build.0 = Release|x64
+		{CD820FA5-0019-4043-BA68-F29A1EA24CF4}.Release|x86.ActiveCfg = Release|Win32
+		{CD820FA5-0019-4043-BA68-F29A1EA24CF4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
