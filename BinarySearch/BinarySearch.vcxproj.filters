@@ -27,5 +27,8 @@
     <ClCompile Include="RouterInstall_ParametricSearch_2110.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="NumberK_ParametricSearch_1300.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
