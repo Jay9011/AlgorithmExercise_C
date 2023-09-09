@@ -133,6 +133,7 @@
     <ClCompile Include="LogCut_ParametricSearch_2805.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="RouterInstall_ParametricSearch_2110.cpp" />
     <ClCompile Include="SearchNumber_1920.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

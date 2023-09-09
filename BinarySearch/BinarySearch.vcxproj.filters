@@ -24,5 +24,8 @@
     <ClCompile Include="LogCut_ParametricSearch_2805.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="RouterInstall_ParametricSearch_2110.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
