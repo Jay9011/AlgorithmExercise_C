@@ -21,5 +21,8 @@
     <ClCompile Include="minHeap_1927.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="absoluteHeap_11286.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
