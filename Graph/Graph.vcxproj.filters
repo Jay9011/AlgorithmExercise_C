@@ -18,5 +18,8 @@
     <ClCompile Include="DeeperSearch01_24479.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="DeeperSearch02_24480.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
