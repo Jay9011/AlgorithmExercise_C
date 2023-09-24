@@ -21,5 +21,8 @@
     <ClCompile Include="DeeperSearch02_24480.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BreadthFirstSearch1_24444.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
