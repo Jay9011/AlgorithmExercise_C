@@ -1,35 +1,29 @@
 ﻿#include <iostream>
 #include <vector>
-#include <queue>
 using namespace std;
+
+void DFS(int vertex, const vector<vector<int>>& network, vector<bool>& visited, int& counter)
+{
+	visited[vertex] = true;
+	counter++;
+
+	for (int next : network[vertex])
+	{
+		if (!visited[next])
+		{
+			DFS(next, network, visited, counter);
+		}
+	}
+}
 
 int ConnectedCounter(int start, const vector<vector<int>>& network)
 {
 	int counter = 0;
 	vector<bool> visited(network.size(), false);
-	queue<int> Q;
 
-	// 시작 정점을 방문합니다.
-	Q.push(start);
-	visited[start] = true;
+	DFS(start, network, visited, counter);
 
-	while (!Q.empty())
-	{
-		int curr = Q.front();
-		Q.pop();
-
-		for(int next : network[curr])
-		{
-			if (!visited[next])
-			{
-				Q.push(next);
-				visited[next] = true;
-				counter++;
-			}
-		}
-	}
-
-	return counter;
+	return counter - 1;
 }
 
 int main()
@@ -41,6 +35,7 @@ int main()
 	cin >> N >> E;
 
 	vector<vector<int>> network(N + 1);
+
 	while (E--)
 	{
 		int u, v;
