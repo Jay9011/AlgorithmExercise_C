@@ -1,5 +1,4 @@
 #include <cstdio>
-#include <cstdlib>
 
 int GCD(int a, int b)
 {
